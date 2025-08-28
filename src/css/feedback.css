@@ -2,29 +2,30 @@
   padding-bottom: 100px;
 }
 .feedback-section-title {
-  font-size: 32px;
+  font-size: 34px;
   text-align: center;
-  line-height: 1.78;
+  line-height: 1.67;
   letter-spacing: 0.01em;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 .feedback-section-descr {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.75;
   text-align: center;
-  max-width: 537px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 40px;
+  letter-spacing: 0.01em;
+  max-width: 323px;
+  margin-bottom: 32px;
 }
 .feedback-section-list {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 64px;
+  gap: 32px;
 }
 .feedback-section-item {
-  flex-basis: calc((100% - 128px) / 3);
+  flex-basis: 100%;
+  flex-shrink: 0;
   border: 1px solid #dedede;
   border-radius: 5px;
   padding: 30px 35px;
@@ -50,7 +51,7 @@
   font-size: 16px;
   line-height: 1.75;
   letter-spacing: 0.01em;
-  color: #737373;
+  color: #32454f;
   margin-bottom: 16px;
 }
 .feedback-client {
@@ -72,5 +73,39 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.01em;
   color: #252b42;
+}
+@media screen and (min-width: 1150px) {
+.feedback-section-title {
+  font-size: 32px;
+  line-height: 1.78;
+  margin-bottom: 10px;
+}
+.feedback-section-descr {
+  max-width: 537px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.feedback-section-descr {
+letter-spacing: 0;
+  max-width: 537px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+.feedback-section-list {
+flex-direction: row;
+  gap: 64px;
+}
+.feedback-section-item {
+  flex-basis: calc((100% - 128px) / 3);
+}
+.feedback-item-rewiew {
+  color: #737373;
+}
+.feedback-item-text {
+  letter-spacing: 0;
+}
 }
