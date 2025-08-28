@@ -1,0 +1,195 @@
+.prices-section {
+  padding-bottom: 100px;
+}
+.prices-section-title {
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.prices-section-descr {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 74px;
+}
+.prices-section-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+}
+.prices-section-item {
+  flex-basis: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.25);
+  padding-left: 74px;
+  padding-right: 74px;
+  padding-bottom: 32px;
+  cursor: pointer;
+  transition: background-color 500ms ease-in-out, box-shadow 500ms ease-in-out;
+}
+.prices-section-item:hover,
+.prices-section-item:focus,
+.prices-section-item:active {
+  background-color: #02897a;
+  box-shadow: none;
+}
+.prices-section-item:hover,
+.prices-section-item:focus,
+.prices-section-item:active .prices-item-title,
+.prices-item-descr,
+.prices-item-list-option {
+  color: #fff;
+}
+.prices-section-item:hover .prices-item-price {
+  color: #fff;
+}
+.prices-section-item:hover sup {
+  color: #fff;
+}
+.prices-section-item:hover .prices-item-price-highlight {
+  color: #e0e0e0;
+}
+.prices-section-item:focus .prices-item-price {
+  color: #fff;
+}
+.prices-section-item:focus sup {
+  color: #fff;
+}
+.prices-section-item:focus .prices-item-price-highlight {
+  color: #e0e0e0;
+}
+.prices-section-item:active .prices-item-price {
+  color: #fff;
+}
+.prices-section-item:active sup {
+  color: #fff;
+}
+.prices-section-item:active .prices-item-price-highlight {
+  color: #e0e0e0;
+}
+.prices-section-item:hover .prices-item-btn,
+.prices-section-item:focus .prices-item-btn,
+.prices-section-item:active .prices-item-btn {
+  background-color: #fff;
+  color: #02897a;
+  border: 1px solid #bcd0e5;
+}
+.prices-item-title {
+  font-size: 24px;
+  line-height: 1.67;
+  text-align: center;
+  margin-bottom: 8px;
+  color: currentColor;
+  transition: color 500ms ease-in-out;
+}
+.prices-item-descr {
+  font-size: 16px;
+  line-height: 2.5;
+  text-align: center;
+  margin-bottom: 16px;
+  color: currentColor;
+  transition: color 500ms ease-in-out;
+}
+.prices-item-price {
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 1.32;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #02897a;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  transition: color 500ms ease-in-out;
+  margin-bottom: 16px;
+}
+.prices-item-price-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+sup {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  vertical-align: super;
+  color: #02897a;
+  transition: color 500ms ease-in-out;
+}
+.prices-item-price-highlight {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.01em;
+  color: #afafaf;
+  display: inline-block;
+}
+.prices-item-list-option {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.37;
+  letter-spacing: 0.01em;
+  text-align: center;
+  margin-bottom: 16px;
+  color: currentColor;
+  transition: color 500ms ease-in-out;
+}
+.prices-item-list-option:last-child {
+  margin-bottom: 38px;
+}
+.prices-item-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  min-width: 139px;
+  height: 44px;
+  background-color: #02897a;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  transition: color 500ms ease-in-out, background-color 500ms ease-in-out,
+    border 500ms ease-in-out;
+}
+@media screen and (min-width: 1150px) {
+  .prices-section-title {
+  margin-bottom: 10px;
+}
+.prices-section-descr {
+  margin-bottom: 40px;
+}
+.prices-section-list {
+  flex-direction: row;
+  gap: 72px;
+}
+.prices-section-item {
+  flex-basis: calc((100% - 144px) / 3);
+  padding-left: 0;
+  padding-right: 0;
+}
+.prices-item-descr {
+    font-family: "Montserrat", sans-serif;
+}
+.prices-item-price {
+    font-family: "Montserrat", sans-serif;
+}
+.sup {
+    font-family: "Inter", sans-serif;
+}
+.prices-item-price-highlight {
+    font-family: "Montserrat", sans-serif;
+}
+.prices-item-list-option {
+    font-family: "Montserrat", sans-serif;
+}
+.prices-item-list-option:last-child {
+  margin-bottom: 30px;
+}
+}
