@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite';
-import { glob } from 'glob';
+import { resolve } from 'path';
 import injectHTML from 'vite-plugin-html-inject';
 import FullReload from 'vite-plugin-full-reload';
 import SortCss from 'postcss-sort-media-queries';
@@ -14,8 +14,7 @@ export default defineConfig(({ command }) => {
       sourcemap: true,
       rollupOptions: {
         input: {
- main: resolve(__dirname, 'src/index.html'),
-       
+        main: resolve(__dirname, 'src/index.html'),
         pricing: resolve(__dirname, 'src/pricing-page.html'),
         },
         output: {
