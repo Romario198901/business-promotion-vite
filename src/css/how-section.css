@@ -1,0 +1,60 @@
+.how-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.how-section-title {
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 74px;
+}
+.how-section-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  row-gap: 100px;
+  margin-bottom: 92px;
+}
+.how-section-item {
+  display: flex;
+  align-items: center;
+  gap: 89px;
+  max-width: 1034px;
+}
+.item-pretitle {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.item-title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+.item-descr {
+  font-size: 16px;
+  line-height: 1.75;
+}
+.how-section-btn {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  min-width: 224px;
+  height: 44px;
+  background-color: #02897a;
+  border-radius: 8px;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  transition: color 500ms ease-in-out,
+    background-color 500ms ease-in-out,
+    border 500ms ease-in-out;
+}
+.how-section-btn:focus,
+.how-section-btn:hover {
+  background-color: #ffffff;
+  color: #02897a;
+  border: 1px solid #bcd0e5;
+}
