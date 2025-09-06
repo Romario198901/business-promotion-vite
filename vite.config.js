@@ -17,6 +17,7 @@ export default defineConfig(({ command }) => {
         main: resolve(__dirname, 'src/index.html'),
         pricing: resolve(__dirname, 'src/pricing-page.html'),
         customers: resolve(__dirname, 'src/customers.html'),
+        resources: resolve(__dirname, 'src/resources.html'),
         },
         output: {
           manualChunks(id) {
