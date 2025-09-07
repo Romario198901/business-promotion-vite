@@ -72,11 +72,11 @@ fill: #fff;
   border: none;
   padding: 10px 0px;
   border-radius: 48px;
-  width: 362px;
+  width: 100%;
   height: 343px;
 }
 .contacts-form-section {
-  width: 344px;
+  width: 100%;
   min-height: 513px;
   margin-left: auto;
   margin-right: auto;
@@ -196,14 +196,14 @@ fill: #fff;
 .contacts-map {
   display: block;
   margin-bottom: 60px;
-  width: 871px;
-  height: 323px;
+  width: 100%;
+  max-width: 871px;
 }
 .contacts-form-section {
   border: 1px solid #ddd;
   border-radius: 20px;
   padding: 52px 50px;
-  width: 868px;
+  max-width: 868px;
   min-height: 670px;
   margin-left: auto;
   margin-right: auto;
@@ -215,6 +215,6 @@ fill: #fff;
   margin-bottom: 45px;
 }
 .contacts-form-textarea {
-  width: 768px;
+  max-width: 768px;
 }
 }
